@@ -1,7 +1,7 @@
 {
   "name": "@michaelpumo/card",
   "version": "1.0.0",
-  "description": "A personal card for Michael Pumo (@michaelpumo)",
+  "description": "Business card of Michael Pumo (@michaelpumo) for the terminal.",
   "main": "index.js",
   "bin": {
     "michaelpumo": "./bin/card.js"
@@ -13,7 +13,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "michaelpumo"
+  ],
   "author": "Michael Pumo <hello@michaelpumo.com> (https://michaelpumo.com)",
   "license": "MIT",
   "dependencies": {

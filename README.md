@@ -1,9 +1,5 @@
-It's me, Michael Pumo!
+# Display my business card in your terminal
 
-# Usage
-Via npx:
 ```
 npx michaelpumo
 ```
-
-Not including how to use it globally because I'm not sure why you'd want this as a global command. That'd be creepy.
