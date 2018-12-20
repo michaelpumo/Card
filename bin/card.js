@@ -4,43 +4,47 @@
 // Pull in our modules
 const chalk = require('chalk')
 const boxen = require('boxen')
+const colors = {
+  red: '#EC697C',
+  navy: '#242842'
+}
 
 // Define options for Boxen
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: 'round'
+  borderStyle: 'round',
+  borderColor: colors.red,
+  backgroundColor: colors.navy
 }
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Michael Pumo /'),
-  handle: chalk.cyan('michaelpumo'),
-  work: chalk.white('Frontend Web Developer'),
-  twitter: chalk.cyan('https://twitter.com/michaelpumo'),
-  github: chalk.cyan('https://github.com/michaelpumo'),
-  linkedin: chalk.cyan('https://linkedin.com/in/michaelpumo'),
-  web: chalk.cyan('https://michaelpumo.com'),
+  name: chalk.white('Michael Pumo'),
+  handle: chalk.hex(colors.red)('michaelpumo'),
+  tagline: chalk.white('Frontend Web Developer'),
+  twitter: chalk.hex(colors.red)('https://twitter.com/michaelpumo'),
+  github: chalk.hex(colors.red)('https://github.com/michaelpumo'),
+  linkedin: chalk.hex(colors.red)('https://linkedin.com/in/michaelpumo'),
+  web: chalk.hex(colors.red)('https://michaelpumo.com'),
   npx: chalk.white('npx @michaelpumo/card'),
-  labelWork: chalk.white.bold('      Work:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
   labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-  labelWeb: chalk.white.bold('       Web:'),
+  labelPortfolio: chalk.white.bold(' Portfolio:'),
   labelCard: chalk.white.bold('      Card:')
 }
 
 // Actual strings we're going to output
 const newline = '\n'
-const heading = `${data.name} ${data.handle}`
-const working = `${data.labelWork}  ${data.work}`
+const heading = `${data.name} | ${data.tagline}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
-const webing = `${data.labelWeb}  ${data.web}`
+const webing = `${data.labelPortfolio}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+const output = heading + newline + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
 
-console.log(chalk.green(boxen(output, options)))
+console.log(boxen(output, options))
