@@ -1,4 +1,6 @@
-# Display my business card in your terminal
+# Michael Pumo
+
+Display my business card in your terminal
 
 ```
 npx michaelpumo
