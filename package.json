@@ -1,6 +1,6 @@
 {
   "name": "@michaelpumo/card",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Business card of Michael Pumo (@michaelpumo) for the terminal.",
   "main": "index.js",
   "bin": {
