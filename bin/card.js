@@ -21,7 +21,7 @@ const data = {
   github: chalk.cyan('https://github.com/michaelpumo'),
   linkedin: chalk.cyan('https://linkedin.com/in/michaelpumo'),
   web: chalk.cyan('https://michaelpumo.com'),
-  npx: chalk.white('npx michaelpumo'),
+  npx: chalk.white('npx @michaelpumo/card'),
   labelWork: chalk.white.bold('      Work:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
